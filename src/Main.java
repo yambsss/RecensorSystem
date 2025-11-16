@@ -42,7 +42,7 @@ public class Main {
         try {
             String text = readFile(file);
             generateQuestions(text);
-            System.out.println("✅ File processed successfully!");
+            System.out.println(" File processed successfully!");
         } catch (Exception e) {
             System.out.println("Error reading file: " + e.getMessage());
         }
@@ -92,7 +92,7 @@ public class Main {
                 pw.println("=== RECENSOR REVIEWER ===");
                 for (String q : questions) pw.println(q);
             }
-            System.out.println("✅ Reviewer saved as " + fileName);
+            System.out.println(" Reviewer saved as " + fileName);
         } catch (IOException e) {
             System.out.println("Error exporting: " + e.getMessage());
         }
